@@ -21,8 +21,7 @@ a{
 }
 
 body{
-    font-family: 'Young Serif', serif;
-    background-color: #18181B;
+    background-color: #000000;
 }
 
 nav{
@@ -107,15 +106,15 @@ nav{
     max-width: 1200px;
     margin: auto;
     padding: 2rem 2rem;
+    display: flex;
 }
 
-#pizzas {
+#hambúrguer {
     background-image: url(./img/fundohamburguer.jpg);;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     backdrop-filter: blur(5px);
     border-radius: 100px;
-    
 }
 
 .blur{
@@ -156,13 +155,12 @@ header .content h1 span{
     0 0 10px #d8771d;
 }
 
-#pizzas h2 span{
-    font-family: 'Dancing Script', cursive;
+#hambúrguer h2 span{
     font-size: 4rem;
     color: #ffffff;
 }
 
-#pizzas #subtitulo{
+#hambúrguer #subtitulo{
     color: #fffdfd;
     text-shadow:
     0 0 10px #ffdfb9;
@@ -203,6 +201,8 @@ section .header{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .pricing .card{
@@ -216,6 +216,7 @@ section .header{
     border: 2px solid #ffffff;
     border-radius: 20px;
     backdrop-filter: blur(8px);
+    max-width: 350px;
 }
 
 .pricing .card:hover{
@@ -252,7 +253,7 @@ section .header{
 
 .pricing .card p i{
     color: #ccc;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-right: 0.3rem;
 }
 
@@ -320,11 +321,13 @@ footer .column > a{
     color: #ccc;
     margin-bottom: 1rem;
     transition: all 0.3s ease;
+    
 }
 
 footer .column > a:hover{
     color: #d8771d;
 }
+
 
 .copyright{
     max-width: 1200px;
